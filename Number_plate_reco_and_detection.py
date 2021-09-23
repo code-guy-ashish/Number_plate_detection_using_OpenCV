@@ -32,7 +32,7 @@ for cont in contours:
     if len(approx) == 4:
         location = approx
         break
-print(location)
+#print(location)
 # Masking
 blank = np.zeros(gray.shape, np.uint8)
 new_img = cv2.drawContours(blank, [location], 0, 255, -1)
